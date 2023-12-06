@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- template -->
+ <head>
+     <title>Rowaid Mohamed</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: red;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: red;
+    }
+    .contact-info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+      text-align: center; /* Center-align the social media icons */
+      margin-bottom: 20px; /* Optional: Add some space below the icons */
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: red;
+      text-decoration: none;
+    }
+  </style>
+ </head>
+ <body>
+
+  <main class="wrapper">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+            <img src="images/story.svg" alt="Your Logo">
+        </a>
+    </div>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About us</a>
+      <a href="services.html" >Services</a>
+      <a href="products/product1.html">Products</a>
+      <a href="contactus.html"><b>Contact Us</b></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+    <h1 class="page-header"><a href="index.html">Rowaid Mohamed</a></h1>
+     </header>
+    <h2 class="h2-main"><b>Contact Us</b></h2>  
+  <div class="container">
+    <h2 class="h2-main">Welcome to Rowaid For Advertising!</h2>
+    
+    <form action="mailto:rowaid.adv@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <input type="submit" value="Send">
+    </form>
+
+    <div class="contact-info">
+        <p><strong>Email:</strong> rowaid.adv@gmail.com</p>
+        <p><strong>Phone:</strong> +218 91-0966260</p>
+        <p><strong>Address:</strong> Hai Demashek, Tripoli, Libya</p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/rowaid.adv" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href="https://twitter.com/rowaid_adv?fbclid=IwAR3t2SWmKT6E1_gDtokJbe_PhSItwOGjiIryKXwk4XCkRljROlTqotEESr4" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
+        <a href="https://www.instagram.com/rowaid.adv/?fbclid=IwAR0l_ctZ026pObu_-XEium6qcjIy_QDKwQHb9klf3hJYWo-ybCn7IVypX-c" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
+        <a href="https://www.tiktok.com/@rowaid.adv?fbclid=IwAR1L3p0kjrWB6BLJhJyfcGmqBSAwWdgpAtGX0o15OTsemtTFvEiWwo9PzVs" target="_blank"><i class="fab fa-tiktok fa-3x"></i></a>
+        <a href="https://wa.me/+218910966260" target="_blank"><i class="fab fa-whatsapp-square fa-3x"></i></a>
+      </div>
+  </div>   
+  <footer>
+      <small>&copy; 2021-<span id="this-year"></span> by 
+          Rami Buaamer, All Rights Reserved ~ 
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+     
+  </footer>
+  </main>
+  <script src="js/main.js"></script>   
+ </body>
+</html>

@@ -1,0 +1,199 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
+
+html {
+    background-color: lightgray;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-size: 2000px 1200px;
+}
+
+body{
+    margin:2em; /* removes gap at top of page */
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+header {
+    padding: 10px 20px 10px 20px;
+    display:flex;
+    background:white;
+    width: 95%;
+    margin: 0 auto;
+    text-align: right;}
+
+h1 {
+    margin: auto;
+    background: none;
+    line-height: 2.5em;
+}
+
+h1.page-header{
+    display: none;
+    font-family: 'Spectral',serif;
+ }
+ .logo {
+    margin-right: 10px;
+    display: block; 
+}
+ .logo img {
+    width: 100px; 
+    height: auto; 
+    background-color: white;
+    display: block;
+  }
+ main.wrapper{
+    padding: 10px 20px 30px 20px; 
+    margin: auto;
+    background-color: white;
+    overflow: auto;
+ }
+ 
+
+p{
+    margin-left: 5em;  
+}
+p.products{
+    margin-left:2em ;
+    margin-top: 1em;  
+}
+
+.h2-main {
+    text-align: center;
+}
+
+picture.main img {
+    width: 100%;  
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: red;
+    text-decoration: none;
+}
+
+/*Styles for the map container */
+#map {
+    height: 400px; 
+    width: 98%; 
+    margin: 0 auto;
+    }
+ 
+
+footer {
+    background-color:rgb(95,95,95);
+    clear: both;
+    text-align: center;
+    color:whitesmoke;
+    padding: 2em;
+    margin: 20px;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 95%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    .logo img {
+        width: 200px; /* Adjust the width as needed */
+        background-color: rgb(255, 255, 255);
+        float: left;
+        /*display: inline-block;*/
+      }
+    picture.products img {
+        width: 100%;   
+    }
+
+    td.column1{
+        background-color : white;
+        width: 32%;
+        line-height: 3em;
+    }
+    td.column3{
+        background-color: white;
+        width: 32%;
+        vertical-align: top;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 95%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+    picture.products img {
+        width: 100%;
+            }
+    td.column1{
+            background-color : white;
+            width: 32%;
+            line-height: 3em;
+        }
+    td.column3{
+            background-color: white;
+            width: 32%;
+            vertical-align: top;
+        }
+    }
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 95%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 100%;
+        padding-left: 0%;
+    }
+    
+    picture.profile img {
+        width: 100%;   
+    }
+    td {
+        display: block;
+        width: 100%;
+      }
+      picture.products img {
+        width: 80%;
+        }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- template -->
+ <head>
+  <title>Rowaid For Advertising</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+ </head>
+ <body>
+
+  <main class="wrapper">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+            <img src="images/story.svg" alt="Your Logo">
+        </a>
+      </div>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html"><b>Home</b></a>
+      <a href="aboutus.html">About us</a>
+      <a href="services.html" >Services</a>
+      <a href="products/product1.html">Products</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+    <h1 class="page-header"><a href="index.html">Rowaid Mohamed</a></h1>
+     </header>
+    <h2 class="h2-main"><b>Welcome to Rowaid For Advertising!</b></h2>
+    <picture class="main">
+        <img src="images/cover.png" alt=" banner">
+      </picture>    
+    <picture class="main">
+        <img src="images/ourprod.png" alt=" banner">
+      </picture>
+    <picture class="main">
+        <img src="images/ourser.png" alt=" banner">
+    </picture>
+    <picture class="main">
+      <img src="images/cover.png" alt=" banner">
+    </picture> 
+    <picture class="main">
+        <img src="images/ourcli.png" alt=" banner">
+      </picture>
+      
+    <h2 class="h2-main"><b>Our Location</b></h2>
+
+    <!-- Map Container -->
+    <div id="map"></div> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtxGKJ7U5AayKVJpd5wvhhkaa20QU6OQ4"></script>
+    <script>
+        // Initialize and display the map/*AIzaSyCtxGKJ7U5AayKVJpd5wvhhkaa20QU6OQ4*/
+        function initMap() {
+          const myLatLng = { lat: 32.85875, lng: 13.19670 }; 
+          const map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 16 
+      });
+      const marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        label: {
+          text: 'Rowied For Advertising',
+          fontSize: '12px', 
+          fontWeight: 'bold', 
+          labelOrigin: new google.maps.Point(40, 0) 
+          
+        }
+      });
+    }
+    </script>
+    <script>
+        initMap();
+    </script>   
+  <footer>
+      <small>&copy; 2021-<span id="this-year"></span> by 
+          Rami Buaamer, All Rights Reserved ~ 
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>   
+  </footer>
+  </main>
+  <script src="js/main.js"></script>   
+ </body>
+</html>
